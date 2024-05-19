@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <button class="verde" onclick="resultado()">Resultado</button>
+
+        <div id="resultado"></div>
+
+        <a style="background-color: green;"  id="btVoltar" href="index.html">Voltar</a><br>
+
+        <button class="verde" onclick="imprimirResultado()">Imprimir</button>
+         <!-- Adicionado botão "Imprimir" -->
+    <script>
+
+         // Função para exibir a visualização de impressão do resultado
+         function imprimirResultado() {
+            window.print();
+        }
+    </script>
+   
+       
+    <script src="script.js"></script>
+</body>
+</html>

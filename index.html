@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URNA ELETRôNICA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="titulo">URNA ELETRÔNICA</h1>
+    <div id="container">
+        <div class="tela">
+            <div id="foto"></div>
+            <h2 id="nome">Nome da Chapa</h2>
+             
+           
+            <p class="numeroDoCandidato">Número do Candidato:</p>
+            <div id="conteudo">
+
+                <div>
+                    <input size="1" type="text" id="campo1" value="" maxlength="1" type="text" readonly="readonly">
+                </div>
+                <div>
+                    <input size="1" type="text" id="campo2" value="" maxlength="1" type="text" readonly="readonly">
+                </div>
+            </div>
+
+        </div id="justica">
+        <img class="brasao" src="./imagens/brasao.png" alt="">
+        <div class="justica">
+            JUSTIÇA<br>ELEITORAL</br></div>
+        <div class="teclado">
+
+            <!-- b1 e bt1 = botão 1-->
+            <button class="b1" id="bt1" onclick="clicou(1)">1</button>
+            <button class="b1" id="bt2" onclick="clicou(2)">2</button>
+            <button class="b1" id="bt3" onclick="clicou(3)">3</button>
+            <button class="b1" id="bt4" onclick="clicou(4)">4</button>
+            <button class="b1" id="bt5" onclick="clicou(5)">5</button>
+            <button class="b1" id="bt6" onclick="clicou(6)">6</button>
+            <button class="b1" id="bt7" onclick="clicou(7)">7</button>
+            <button class="b1" id="bt8" onclick="clicou(8)">8</button>
+            <button class="b1" id="bt9" onclick="clicou(9)">9</button>
+            <button class="b1" id="bt0" onclick="clicou(0)">0</button>
+
+            <div>
+                <button class="botao-branco" onclick="clicouBranco('branco')">BRANCO</button>
+                <button class="botao-corrige" onclick="clicouCorrige('corrigir')">CORRIGIR</button>
+                <button class="botao-confirma" onclick="clicouConfirma('confirmar')">CONFIRMAR</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <audio id="som-confirmacao">
+        <source src="audios/confirma.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <audio id="som-correcao">
+        <source src="audios/corrige.mp3" type="audio/mpeg">
+
+    </audio>
+    <audio id="som-numeracao">
+        <source src="audios/numeros.mp3" type="audio/mpeg">
+
+    </audio>
+    <a id="esmaecer" href="resultado.html">Resultado</a>
+    <!--<script src="js/etapas.js"></script>-->
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
