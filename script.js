@@ -49,6 +49,11 @@ function atualizaFoto() {
         document.getElementById('nome').innerHTML = "Chapa O Mestre";
     } 
 
+    else if (valor1 === '0' && valor2 === '4') {
+        document.getElementById('foto').innerHTML = "<img src='./imagens/taty.jpeg' alt='Foto da tatiane'>";
+        document.getElementById('nome').innerHTML = "Chapa A Maravilhosa";
+    } 
+
     else if (valor1 !== '' && valor2 !== '') {
         document.getElementById('foto').innerHTML = "<img src='./imagens/nulo.jpg' alt='Foto de nulo'>";
         document.getElementById('nome').innerHTML = " Vai anular seu voto? " ;
