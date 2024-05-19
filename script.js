@@ -89,6 +89,7 @@ function resultado() {
 }
 
 let totalVotosBrancos = 0;
+
 function contarCliquesBotaoBranco() {
     totalVotosBrancos++;
     sessionStorage.setItem('branco', totalVotosBrancos);
