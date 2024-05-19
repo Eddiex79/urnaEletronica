@@ -45,15 +45,36 @@ function atualizaFoto() {
     } 
     
     else if (valor1 === '0' && valor2 === '3') {
-        document.getElementById('foto').innerHTML = "<img src='./imagens/edson.jpg' alt='Foto do Davi'>";
+        document.getElementById('foto').innerHTML = "<img src='./imagens/edson.jpg' alt='Foto do Edson'>";
         document.getElementById('nome').innerHTML = "Chapa O Mestre";
     } 
+
+    else if (valor1 !== '' && valor2 !== '') {
+        document.getElementById('foto').innerHTML = "<img src='./imagens/nulo.jpg' alt='Foto de nulo'>";
+        document.getElementById('nome').innerHTML = " Vai anular seu voto? " ;
+        document.getElementById('nome').style.fontSize = '25px'; 
+    }
     
     else {
-        document.getElementById('foto').innerHTML = "ESCOLHA SEU CANDIDATO.";
+        document.getElementById('foto').innerHTML = "";
         document.getElementById('nome').innerHTML = "";
     }
 }
+
+ // Define a mensagem no elemento com id 'foto'
+ document.getElementById('foto').innerHTML = "";
+
+ // Seleciona o elemento para fazer piscar
+ const elemento = document.getElementById('foto1');
+
+ // Função para alternar a visibilidade do elemento
+ setInterval(() => {
+     if (elemento.style.visibility === 'hidden') {
+         elemento.style.visibility = 'visible';
+     } else {
+         elemento.style.visibility = 'hidden';
+     }
+ }, 500); // 500 milissegundos = 0,5 segundos
 
 
 function clicouConfirma() {
