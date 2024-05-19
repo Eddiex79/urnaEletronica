@@ -51,7 +51,7 @@ function atualizaFoto() {
     
     else {
         document.getElementById('foto').innerHTML = "ESCOLHA SEU CANDIDATO.";
-        document.getElementById('nome').innerHTML = "Chapa não escolhida";
+        document.getElementById('nome').innerHTML = "";
     }
 }
 

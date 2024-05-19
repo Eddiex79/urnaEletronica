@@ -153,13 +153,17 @@ p{
       
 
     #foto {
-        border: solid 1px black;
+        
         height:150px;
-        width: 130px;
+        width: 170px;
         float: right;
         position: absolute;
     }
-
+    #foto img {
+        width: 100%; /* Make the image fill the width of the div */
+        height: 100%; /* Maintain aspect ratio */
+        display: block; /* Remove any extra space below the image */
+    }
    
     
 h2{
@@ -168,11 +172,7 @@ h2{
     position: absolute;
     margin-top: 153px;
 }
-    #foto img {
-        width: 100%; /* Make the image fill the width of the div */
-        height: 100%; /* Maintain aspect ratio */
-        display: block; /* Remove any extra space below the image */
-    }
+ 
 
     #btVoltar{
         float: left;
