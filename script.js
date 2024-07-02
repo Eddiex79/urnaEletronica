@@ -1,3 +1,5 @@
+/* Feito na unha, sem framework para ajudar, se está roubando esse código faça um pix anônimo */
+
 function clicouBranco() {
     alert("Seu voto será anulado se clicar em 'CONFIRMA'");
     document.getElementById("campo1").value = "";
