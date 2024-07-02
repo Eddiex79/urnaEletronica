@@ -1,4 +1,4 @@
-/* Feito na unha, sem framework para ajudar, se está roubando esse código faça um pix anônimo */
+/* Feito na unha, sem framework para ajudar, se está roubando esse código faça um pix anônimo para 11 96928-2665 */
 
 function clicouBranco() {
     alert("Seu voto será anulado se clicar em 'CONFIRMA'");
