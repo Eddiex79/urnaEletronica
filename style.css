@@ -203,4 +203,10 @@ h2{
         }
  
 }
+@media screen and (max-width:750px){
+        body{
+            width:100%;
+        }
+
+}
 
